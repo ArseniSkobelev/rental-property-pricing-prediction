@@ -4,9 +4,9 @@
 <h1>Predicting rental property pricing based on a linear regression model</h1>
 </div>
 
-Written by: _Arseni Skobelev_
+<br />
 
-### Intro
+### Introduction
 
 The motivation for this project was to dive slightly below the surface level on a topic with such a widespread of information and knowledge as **AI.** My goal was to ensure that my recently acquired knowledge on the **artificial intelligence** and **machine learning** basics ([Introduction to AI](https://course.elementsofai.com/) and [Building AI](https://buildingai.elementsofai.com/) course curriculum provided by [Elements of AI](https://www.elementsofai.com/)) wouldn't go to waste in the never ending pit of new technologies and concepts that I am invested in.
 
