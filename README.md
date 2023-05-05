@@ -10,7 +10,7 @@ _P.S The training data for the model was gathered in **May, 2023** and will most
 
 <br />
 
-As I quickly understood, a one-of project with some kind of publically available dataset wouldn't do it to staple the knowledge once and for all _(or atleast the nearest future)._ I had to improvise and find a problem that at the same time was interesting for me and that I could solve quickly.
+As I quickly understood, a one-of project with some kind of publically available dataset and a YouTube tutorial to follow wouldn't do it to staple the knowledge once and for all _(or atleast the nearest future)._ I had to improvise and find a problem that at the same time was interesting for me and that I could solve quickly.
 <br />
 Another goal for the project was to ensure that the dataset it was based upon was gathered fully by me (me as in **Python** and **Beautiful Soup 4**).
 
@@ -44,7 +44,7 @@ def gather_model_performance_data(model):
     model_predictions = model.predict(feature_test_data)
 
     # Get the r-squared proportion of the model and present it
-    print(r2_score(value_test_data, model_predictions))
+    print(r2_score(y_test_data, model_predictions))
 ```
 
 ```py3
@@ -52,3 +52,24 @@ def gather_model_performance_data(model):
 >>> gather_model_performance_data(lr)
 0.6363826621317836
 ```
+
+<br />
+
+### Data gathering
+
+The data gathering process was pretty straight forward and surprisingly simple. As mentioned earlier the data gathering process was performed with a _Python_ library called [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), a powerful **[web-scraping](https://en.wikipedia.org/wiki/Web_scraping)** library that is easy to setup and is pretty straight forward to use.
+
+<br />
+
+The first step that had to be performed to ensure successful completion of the given task was to structurize the input data. In the context of this project, _to structurize the input data_, meant that I had to determine what kind of actual data I wanted to gather. I think that it is self explanatory that i had to gather real rental property data to base the model upon, but _the Devil lies in the details._
+
+<br />
+
+I had to:
+
+1. Find a source of truthful information about rental properties.
+   - I've used [finn.no](https://finn.no/), a _(mainly)_ Norwegian website that allows people to create different kinds of advertisements about buying/selling/renting/searching everything. Somewhat similar to [Craigslist](https://craigslist.org/).
+2. Determine the _variables_ I wanted to base my predictions upon
+   - I've settled on 2 variables; **Area of the rental property in square meters** and the **number of bedrooms**.
+3. Build and test a solution for scraping the previously mentioned website for any advertisements that mention renting out a property.
+   - You can observe the solution [here](/assets/data/data_gathering.py). Please be aware that this solution does not allow for easy recreational usage of the script. Many of the values are presented in a so-called _hard-coded_ format which will require some Python knowledge to reuse. But you are free to tinker around with the script itself or the [mined dataset](/assets/data/rentals.csv).
