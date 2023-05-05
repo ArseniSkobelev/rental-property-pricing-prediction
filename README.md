@@ -1,5 +1,4 @@
 <br />
-<br />
 
 <div align="center">
 <h1>Predicting rental property pricing based on a linear regression model</h1>
