@@ -33,7 +33,9 @@ This meant that the model would not be able to compete with any proffesional ren
 
 ### Performance
 
-\- _Speaking of accuracy, how does it perform?_ <br />
+\- _Speaking of accuracy, how does it perform?_
+<br />
+
 This is the part of the project which I was less excited about because of the earlier mentioned reasons. If the [R-Squared](https://en.wikipedia.org/wiki/Coefficient_of_determination) proportion or the _coefficient of determination_ value is something that seems respectable in your eyes:
 
 ```py3
