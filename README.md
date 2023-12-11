@@ -2,6 +2,8 @@
 <h1>Predicting rental property pricing based on a multiple linear regression model</h1>
 </div>
 
+### P.s The description has never been finished till this day.. (11.12.23)
+
 ### Introduction
 
 The motivation for this project was to dive slightly below the surface level on a topic with such a widespread of information and knowledge as **AI.** My goal was to ensure that my recently acquired knowledge on the **artificial intelligence** and **machine learning** basics _([Introduction to AI](https://course.elementsofai.com/) and [Building AI](https://buildingai.elementsofai.com/) course curriculum provided by [Elements of AI](https://www.elementsofai.com/))_ wouldn't go to waste in the never ending pit of new technologies and concepts that I am invested in. This article may _(or may not)_ include some technical information represented with either _code blocks_ or screenshots. Those of you whom are less engaged in the technical side of things may skip those visual representations.
